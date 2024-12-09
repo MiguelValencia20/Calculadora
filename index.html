@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+        <h2>Calculadora</h2>
+            <div class="contenedor">
+                <input type="number" id="numero1" placeholder="ingresa tu numero" > 
+                <input type="number" id="numero2" placeholder="ingresa tu numero" >
+            </div>
+        
+            <div class="contenedor">
+                <button id="sum" onclick="Mostrar_Suma()">+</button>
+                <button id="res" onclick="Mostrar_Resta()">-</button>
+                <button id="mul" onclick="Mostrar_Mult()">*</button>
+                <button id="div" onclick="Mostrar_Div()">/</button>
+            </div>
+
+            <div class="contenedor">
+                <button id="raiz" onclick="Mostrar_Raiz()">Raiz</button>
+                <button id="potencia" onclick="Mostrar_Potencia()">potencia</button>
+            </div>
+
+            <div class="contenedor" >
+                <button id="absoluto"onclick="Mostrar_Abs()" >absoluto</button>
+                <button id="random" onclick="Mostrar_Random(numero1,numero2)">random</button>
+            </div>
+
+            <div class="contenedor">
+                <h3 id="resultado" class="contenedor_resultado">Resultado</h3>
+            </div>
+
+            <div class="contenedor">
+                <button id="round" onclick="Mostrar_Round()">Round</button>
+                <button id="floor" onclick="Mostrar_Floor()">Floor</button>
+                <button id="ceil" onclick="Mostrar_Ceil()">Ceil</button>
+            </div>
+</body>
+</html>
